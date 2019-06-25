@@ -1,0 +1,30 @@
+
+body{
+    background: lightgray;
+    color:blue;
+}
+h1 {
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+a {
+    text-decoration: underline;
+    font-style: italic;
+}
+a:link{
+    color:green;
+}
+a:visited{
+    color:blueviolet;
+}
+strong{
+    color: yellow;
+    font-weight: bold;
+}
+#fun{
+    float:left;text-align: center; width: 600px;
+}
+#sad {
+    text-align: center;width: 600px;display: inline-block
+}
