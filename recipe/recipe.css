@@ -41,11 +41,48 @@ h2{
 #comment p{
     background-color: #FFFFA8;
     padding-right: 10px;
-
+    font-style: italic;
 }
+
+#comment p span 
+{
+    display: block;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
 .ulnor{
     list-style: none;
 }
+.copyright{
+    list-style: none;
+    font-family: monospace;
+    text-align: left;
+}
+.copyright li{
+    border-right: 1px solid;
+    padding-right: 5px;
+}
+
 footer{
     float: right;
+    text-align: right;
 }
