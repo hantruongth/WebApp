@@ -53,7 +53,7 @@ h2{
 }
 .tooltip {
     display: inline-block;
-    /*border-bottom: 1px dotted black;*/
+    border-bottom: 1px dotted black;
     text-decoration: underline;
 }
 
