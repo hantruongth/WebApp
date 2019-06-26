@@ -1,3 +1,5 @@
+
+
 body{
     background: url('images/background.gif');
     margin-left: 10%;
@@ -13,6 +15,7 @@ body{
 }
 #headline .sub{
     border: 5px solid orange;
+    margin-bottom: 5px;
 }
 #content .item{
     border: 5px solid blue;
