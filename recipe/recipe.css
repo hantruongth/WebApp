@@ -48,7 +48,9 @@ h2{
 {
     display: block;
 }
-
+.deleted{
+    text-decoration: line-through;
+}
 .tooltip {
     position: relative;
     display: inline-block;
