@@ -1,0 +1,25 @@
+body{
+    background: url('images/background.gif');
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#container{
+    border: 5px solid green;
+    background:white;
+}
+#headline{
+    border: 5px solid red;
+}
+#headline .sub{
+    border: 5px solid orange;
+}
+#content .item{
+    border: 5px solid blue;
+    background: #E8FBFB;
+    padding:5px;
+    margin-top: 10px;
+}
+.date{
+    border: 5px solid purple;
+}
