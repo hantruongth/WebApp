@@ -52,23 +52,9 @@ h2{
     text-decoration: line-through;
 }
 .tooltip {
-    position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
-}
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-.tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
+    /*border-bottom: 1px dotted black;*/
+    text-decoration: underline;
 }
 
 .ulnor{
