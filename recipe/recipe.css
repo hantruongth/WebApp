@@ -64,6 +64,8 @@ h2{
     list-style: none;
     font-family: monospace;
     text-align: left;
+    white-space: pre-line;
+    
 }
 .copyright li{
     border-right: 1px solid;
