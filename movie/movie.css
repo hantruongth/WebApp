@@ -1,0 +1,83 @@
+body{
+    background: url('images/background.png');
+    font-family: 'Verdana', 'Tahoma', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 8pt;
+}
+#header{
+    background: url('images/bannerbg.png');
+    text-align: center;
+}
+#header img{
+    margin: auto;
+}
+#container{
+    margin: auto;
+    width: 800px;
+    border: 4px solid gray;
+    border-radius: 20px;
+    min-height: 800px;
+    overflow: auto;
+    
+
+}
+h1{
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: 'Verdana', 'Tahoma', sans-serif;
+    text-align: center;
+
+}
+#leftpanel{
+    float: left;
+    width: 67%;
+}
+#rightpanel{
+    float: left;
+    width: 33%
+}
+#rightpanel img{
+    width: 100%;
+}
+#validator{
+    float: left;
+}
+#rotten{
+    background: url('images/rbg.png');
+    background-repeat: repeat-x;
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+}
+.overralRating{
+    padding-bottom: 5px;
+    vertical-align: top;
+
+}
+.column{
+    width: 46%;
+    float: left;
+    margin: 2%;    
+}
+.review{
+    background: #E8DC9B;
+    font-size: 8pt;
+    font-weight: bold;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding:8px;
+
+}
+.review img{
+    float: left;
+    padding-right: 5px;
+}
+.author{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.author img{
+    float: left;
+    padding-right: 5px;
+}
