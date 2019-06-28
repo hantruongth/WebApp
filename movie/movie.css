@@ -19,26 +19,45 @@ body{
     border-radius: 20px;
     min-height: 800px;
     overflow: auto;
-    
-
+    background: #A2B964;
 }
 h1{
     font-size: 24pt;
     font-weight: bold;
     font-family: 'Verdana', 'Tahoma', sans-serif;
     text-align: center;
+    text-shadow: 3px 3px  #999999;
 
 }
 #leftpanel{
     float: left;
     width: 67%;
+    background: url(images/background.png);
+    min-height: 1048px;
 }
 #rightpanel{
     float: left;
-    width: 33%
+    width: 33%;
 }
 #rightpanel img{
     width: 100%;
+}
+#rightpanel dl{
+    padding: 10px;
+    font-size: 8pt;
+    font-family: 'Arial', sans-serif;
+}
+
+#rightpanel dl dt{
+    font-weight: bold;
+    font-size: 10pt;
+}
+dd{
+    padding-bottom: 10px;
+}
+dd ul{
+    padding-left: 0;
+    list-style: none;
 }
 #validator{
     float: left;
@@ -67,7 +86,13 @@ h1{
     border: 2px solid gray;
     border-radius: 10px;
     padding:8px;
+    min-height: 30px;
 
+}
+#paging{
+    clear: both;
+    text-align: center;
+    font-weight: bold;
 }
 .review img{
     float: left;
