@@ -60,7 +60,7 @@ dd ul{
     list-style: none;
 }
 #validator{
-    float: left;
+    float: right;
 }
 #rotten{
     background: url('images/rbg.png');
