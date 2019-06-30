@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Checkout Items Form</title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="container">
+        <h1>Secure payment with <img src="images/master-icon.jpg"/></h1>
+    <form action="action.php" method="POST" >
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div class="column">
+                <label>First name</label>
+                <input type="text" name="firstName" id="firstName"/>
+            
+                <label>Date of Birth</label>
+                <input type="text" id="dateOfBirth"  name="dateOfBirth" placeholder="MM/DD/YYYY" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Invalid format" />
+                <label>SSN</label><input type="number" name="ssn" id="ssn"/>
+               
+            </div>
+            <div class="column">
+                    <label>Last name</label>
+                    <input type="text" name="lastName" id="lastName"/>
+                    <label>Email</label>
+                    <input type="text" id="email" name="email" />
+                    <label>Phone</label><input type="number" name="phone" id="phone"/>
+                    
+            </div>
+
+            <div class="column">
+                <label>Address 1</label>
+                <input type="text" name="address" id="address" placeholder="Housing number and street name etc."/>
+                <label>Zipcode</label><input type="text" name="zipCode" id="zipCode"/>
+                <label>Town/City</label><input type="text" name="city" id="city"/>
+            </div>
+            <div class="column">
+                <label>Address 2</label>
+                    <input type="text" name="extAddress" id="extAddress" placeholder="Apt, suite, etc. (optional)"/>
+                    <label>State</label>
+                    <select name="addressState">
+                            <option value="CA">California(CA)</option>
+                            <option value="IA" selected>Iowa(IA)</option>
+                            <option value="IL">Illinos(IL)</option>
+                            <option value="MN">Minesota(MN)</option>
+                            </select>
+                        <label>Country</label>
+                        <select name="country" id="country">
+                            <optgroup label="Asia">
+                                <option value="th">Thailand(TH)</option>
+                                <option value="sg">Singpapore(SG)</option>
+                                <option value="vn">Vietnam(VN)</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                    <option value="be">Belgium(BE)</option>
+                                    <option value="fr">France(FR)</option>
+                                    <option value="it">Italy(IT)</option>
+                            </optgroup>
+                            <optgroup label="Amerian">
+                                    <option value="us" selected>United States(US)</option>
+                                    <option value="ca">Canada(CA)</option>
+                                    <option value="mx">Mexico(MX)</option>
+                            </optgroup>
+                        </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Billing Address</legend>
+            <div class="column">
+                    <label>First name</label>
+                    <input type="text" name="billingFirstName" id="billingFirstName"/>
+                    <label>Address 1</label>
+                    <input type="text" name="billingAddress" id="billingAddress" placeholder="Housing number and street name etc."/>
+                    <label>Zipcode</label><input type="text" name="billingZipCode" id="billingZipCode"/>
+                    <label>State</label>
+                    <select name="biilingAddressState">
+                        <option value="CA">California(CA)</option>
+                        <option value="IA" selected>Iowa(IA)</option>
+                        <option value="IL">Illinos(IL)</option>
+                        <option value="MN">Minesota(MN)</option>
+                    </select>
+                       
+                    <label>Note</label>
+                    <textarea id="paymentNote"></textarea>
+            </div>
+            <div class="column">
+                    <label>Last name</label>
+                    <input type="text" name="billingLastName" id="billingLastName"/>
+
+                    <label>Address 2</label>
+                    <input type="text" name="biilingExtAddress" id="biilingExtAddress" placeholder="Apt, suite, etc. (optional)"/>
+                    <label>Town/City</label><input type="text" name="billingCity" id="billingCity"/>
+                    <label>Country</label>
+            <select name="billingCountry" id="billingCountry">
+                <optgroup label="Asia">
+                    <option value="th">Thailand(TH)</option>
+                    <option value="sg">Singpapore(SG)</option>
+                    <option value="vn">Vietnam(VN)</option>
+                </optgroup>
+                <optgroup label="Europe">
+                        <option value="be">Belgium(BE)</option>
+                        <option value="fr">France(FR)</option>
+                        <option value="it">Italy(IT)</option>
+                </optgroup>
+                <optgroup label="Amerian">
+                        <option value="us" selected>United States(US)</option>
+                        <option value="ca">Canada(CA)</option>
+                        <option value="mx">Mexico(MX)</option>
+                </optgroup>
+            </select>
+            </div>
+            
+        </fieldset>
+
+        Shipping to the same address ? <input type="checkbox" id="chkboxSameAddress"/>
+
+        <fieldset>
+                <legend>Shipping Address</legend>
+
+                <div class="column">
+                        <label>First name</label><input type="text" name="shippingFirstName" id="shippingFirstName"/>
+                        <label>Address 1</label><input type="text" name="shippingAddress" id="shippingAddress" placeholder="Housing number and street name etc."/>
+                        <label>Zipcode</label><input type="text" name="shippingZipCode" id="shippingZipCode"/>
+                        <label>State</label>
+                        <select name="shippingAddressState">
+                            <option value="CA">California(CA)</option>
+                            <option value="IA" selected>Iowa(IA)</option>
+                            <option value="IL">Illinos(IL)</option>
+                            <option value="MN">Minesota(MN)</option>
+                        </select>
+                        <label>Note</label>
+                        <textarea id="paymentNote"></textarea>
+                </div>
+
+                <div class="column">
+                        <label>Last name</label><input type="text" name="shippingLastName" id="shippingLastName"/>
+                        <label>Address 2</label>
+                        <input type="text" name="shippingExtAddress" id="shippingExtAddress" placeholder="Apt, suite, etc. (optional)"/>
+                        <label>Town/City</label><input type="text" name="shippingCity" id="shippingCity"/>
+                        <label>Country</label>
+                        <select name="shippingCountry" id="shippingCountry">
+                            <optgroup label="Asia">
+                                <option value="th">Thailand(TH)</option>
+                                <option value="sg">Singpapore(SG)</option>
+                                <option value="vn">Vietnam(VN)</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                    <option value="be">Belgium(BE)</option>
+                                    <option value="fr">France(FR)</option>
+                                    <option value="it">Italy(IT)</option>
+                            </optgroup>
+                            <optgroup label="Amerian">
+                                    <option value="us" selected>United States(US)</option>
+                                    <option value="ca">Canada(CA)</option>
+                                    <option value="mx">Mexico(MX)</option>
+                            </optgroup>
+                        </select>
+
+                </div>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Payment information</legend>
+               Card accepted 
+                <img src="images/creditcard.png" alt="Creditcard" />
+
+                <label>Card holder <span class="required">*</span></label>
+                <input type="text" id="cardHolderName" name="cardHolderName"/>
+                <label>Card number<span class="required">*</span> </label>
+                <input type="number" id="cardNumber" name="cardNumber">
+                <label>Expiration (MM/YY)<span class="required">*</span></label>
+                <input type="text" id="cardExpired" name="cardCVV">
+                <label>Card Security Code<span class="required">*</span></label>
+                <input type="text" id="cardCVV" name="cardCVV" size="3" maxlength="3" pattern="[0-9]{3}">
+            </fieldset>
+            <div class="btnSubmitDiv">
+                <button type="submit">Proceed Payment</button>
+            </div>
+    </form>
+</div>
+</body>
+</html>
