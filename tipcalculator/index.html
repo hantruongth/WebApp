@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://mumstudents.org/cs472/2019-03-RS/Lectures/js10/tip.html -->
+<html><!--
+	CSE 190M, Summer 2012
+	This file is a tip calculator page using JavaScript.
+	--><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Tip Calculator</title>
+		<link href="tip.css" type="text/css" rel="stylesheet">
+		<script src="tip.js" type="text/javascript"></script>
+	</head>
+
+
+	<body>
+		<h1>
+			<img id="logo" src="images/calc.jpg" alt="++--**//">
+			  Tip Calculator
+		</h1>
+
+		<div>
+			<label><input id="subtotal" type="number"> $ Subtotal</label>
+		</div>
+
+		<div>
+			<label><input id="tip" type="number"> % Tip</label>
+		</div>
+
+		<div>
+			<button id="btn" onclick="calcTip();">Calculate Tip</button>
+		</div>
+
+		<hr>
+
+		<div>
+			<h2>Your total:</h2>
+			<p id="total">$0.00</p>
+		</div>
+	
+		<div id="validator">
+				<a href="https://validator.w3.org/check/referer">
+                    <img src="../images/w3c-html.png" alt="html validator"/>
+                </a> <br />
+                <a href="https://jigsaw.w3.org/css-validator/check/referer"> 
+                    <img src="../images/w3c-css.png" alt="css validator"/>
+                </a>
+		</div>
+
+</body></html>
