@@ -13,27 +13,26 @@
         <fieldset>
             <legend>Personal Details</legend>
             <div class="column">
-                <label>First name</label>
-                <input type="text" name="firstName" id="firstName"/>
-            
-                <label>Date of Birth</label>
-                <input type="text" id="dateOfBirth"  name="dateOfBirth" placeholder="MM/DD/YYYY" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Invalid format" />
-                <label>SSN</label><input type="number" name="ssn" id="ssn"/>
+                <label>First name<span class="required">*</span></label>
+                <input type="text" name="firstName" id="firstName" required/>
+                <label>Date of Birth<span class="required">*</span></label>
+                <input type="text" id="dateOfBirth"  name="dateOfBirth" placeholder="MM/DD/YYYY" pattern="\d{2,2}/\d{2,2}/\d{4}" title="Invalid format" required/>
+                <label>SSN<span class="required">*</span></label><input type="text" name="ssn" id="ssn" maxlength="9" size="9" required pattern="[0-9]{9}" title="Should be 9 digits"/>
                
             </div>
             <div class="column">
-                    <label>Last name</label>
-                    <input type="text" name="lastName" id="lastName"/>
-                    <label>Email</label>
-                    <input type="text" id="email" name="email" />
-                    <label>Phone</label><input type="number" name="phone" id="phone"/>
+                    <label>Last name<span class="required">*</span></label>
+                    <input type="text" name="lastName" id="lastName" required/>
+                    <label>Email<span class="required">*</span></label>
+                    <input type="text" id="email" name="email" required pattern="^[+_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$"/>
+                    <label>Phone</label><input type="text" name="phone" id="phone" maxlength="10" size="10" pattern="[0-9]{10}" title="Should be max 10 digits">
                     
             </div>
 
             <div class="column">
                 <label>Address 1</label>
                 <input type="text" name="address" id="address" placeholder="Housing number and street name etc."/>
-                <label>Zipcode</label><input type="text" name="zipCode" id="zipCode"/>
+                <label>Zipcode<span class="required">*</span></label><input type="text" name="zipCode" id="zipCode" maxlength="7" required pattern="\d{5,7}" title="Zipcode should be from 5-7 number"/>
                 <label>Town/City</label><input type="text" name="city" id="city"/>
             </div>
             <div class="column">
@@ -70,11 +69,11 @@
         <fieldset>
             <legend>Billing Address</legend>
             <div class="column">
-                    <label>First name</label>
-                    <input type="text" name="billingFirstName" id="billingFirstName"/>
+                    <label>First name<span class="required">*</span></label>
+                    <input type="text" name="billingFirstName" id="billingFirstName" required/>
                     <label>Address 1</label>
                     <input type="text" name="billingAddress" id="billingAddress" placeholder="Housing number and street name etc."/>
-                    <label>Zipcode</label><input type="text" name="billingZipCode" id="billingZipCode"/>
+                    <label>Zipcode<span class="required">*</span></label><input type="text" name="billingZipCode" id="billingZipCode" maxlength="7" required pattern="\d{5,7}" title="Zipcode should be from 5-7 number"/>
                     <label>State</label>
                     <select name="biilingAddressState">
                         <option value="CA">California(CA)</option>
@@ -87,8 +86,8 @@
                     <textarea id="paymentNote"></textarea>
             </div>
             <div class="column">
-                    <label>Last name</label>
-                    <input type="text" name="billingLastName" id="billingLastName"/>
+                    <label>Last name<span class="required">*</span></label>
+                    <input type="text" name="billingLastName" id="billingLastName" required/>
 
                     <label>Address 2</label>
                     <input type="text" name="biilingExtAddress" id="biilingExtAddress" placeholder="Apt, suite, etc. (optional)"/>
@@ -115,7 +114,7 @@
             
         </fieldset>
 
-        Shipping to the same address ? <input type="checkbox" id="chkboxSameAddress"/>
+        <div class="sdch">Shipping to the same address ? <input type="checkbox" id="chkboxSameAddress"/> </div>
 
         <fieldset>
                 <legend>Shipping Address</legend>
@@ -169,15 +168,16 @@
                 <img src="images/creditcard.png" alt="Creditcard" />
 
                 <label>Card holder <span class="required">*</span></label>
-                <input type="text" id="cardHolderName" name="cardHolderName"/>
+                <input type="text" id="cardHolderName" name="cardHolderName" required/>
                 <label>Card number<span class="required">*</span> </label>
-                <input type="number" id="cardNumber" name="cardNumber">
+                <input type="text" id="cardNumber" name="cardNumber" required maxlength="16" pattern="[0-9]{16}"/>
                 <label>Expiration (MM/YY)<span class="required">*</span></label>
-                <input type="text" id="cardExpired" name="cardCVV">
+                <input type="text" id="cardExpired" name="cardCVV" required pattern="\d{2,2}/\d{2,2}" placeholder="MM/YY">
                 <label>Card Security Code<span class="required">*</span></label>
-                <input type="text" id="cardCVV" name="cardCVV" size="3" maxlength="3" pattern="[0-9]{3}">
+                <input type="text" id="cardCVV" name="cardCVV" size="3" maxlength="3" pattern="[0-9]{3}" title="Invalid format" required>
             </fieldset>
             <div class="btnSubmitDiv">
+                <input type="checkbox" required title="You must accept the Conditions"/><span>You confirm that you have read, understood and agree to the above Important Disclosures.</span>
                 <button type="submit">Proceed Payment</button>
             </div>
     </form>

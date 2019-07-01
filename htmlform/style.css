@@ -84,6 +84,24 @@ textarea{
 }
 .btnSubmitDiv{
     text-align: center;
+    margin-top: 20px;
+}
+.btnSubmitDiv input[type="checkbox"]{ 
+    vertical-align: middle;
+    width: 20px;
+    float: left;
+}
+.btnSubmitDiv span{
+    float: left;
+}
+.sdch{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: block;
+}
+.sdch input{
+    display: inline;
+    vertical-align: sub;
 }
 button{
     font-size: 1.25rem;
