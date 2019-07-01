@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text Decorator</title>
+		<link href="decoratemytext.css" type="text/css" rel="stylesheet" />
+
+		<!--
+		This is a widely-used JavaScript library named jQuery that has
+		many useful functions which we need.
+		Please don't remove this link or change its URL; leave it as-is!
+		-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+        <script src="decoratemytext.js"></script>
+		
+	</head>
+
+	<body>
+		<h1>Text Decorator</h1>
+		
+		<div>
+			<img src="images/decorated.gif" alt="very decorated!" />
+		</div>
+
+		<fieldset>
+            <legend>Text</legend>
+            <textarea cols="30" rows="4" id="txtArea">
+                Sample Item 1
+                Sample Item 2
+            </textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Decoration</legend>
+            <button onclick="handleTimerClick(2);">Bigger Decoration</button>
+            <button onclick="handleTimerClick(-2);">Smaller Decoration</button>
+            <br/>
+            <input type="checkbox" id="blingCheckbox" onchange="changeStyle()">Bling
+        </fieldset>
+
+		
+	</body>
+</html>
