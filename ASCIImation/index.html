@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASCIImation</title>
+    <link href="ascii.css" type="text/css" rel="stylesheet"/>
+    <script src="animations.js" type="text/javascript"></script>
+    <script src="ascii.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>CSE 190 M ASCII Animation Viewer</h1>
+    <textarea cols="80" rows="20" id="animationArea"></textarea>
+    <div id="controlBtn"> 
+    <fieldset>
+        <legend>Play Controls</legend>
+            <button type="button" id='btnPlay'>Play</button>
+            <button type="button" id='btnStop'>Stop</button>
+    </fieldset>
+    <fieldset>
+        <legend>Animation</legend>
+        <select id="animationType">
+            <option value="BLANK">Blank</option>
+            <option value="EXERCISE" selected>Excercise</option>
+            <option value="JUGGLER">Juggler</option>
+            <option value="BIKE">Bike</option>
+            <option value="DIVE">Dive</option>
+            <option value="CUSTOM">Custom</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Size</legend>
+        <select id="animationSize">
+            <option value="7">Tiny</option>
+            <option value="10">Small</option>
+            <option value="12" selected>Medium</option>
+            <option value="16">Large</option>
+            <option value="24">Extra Large</option>
+            <option value="32">XXL</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Speed</legend>
+        <input id="turboCheckbox" type="checkbox" name="Speed" /> Turbo
+    </fieldset>
+</div>
+<div id="validator">
+    <a href="https://webster.cs.washington.edu/jslint/?referer">
+        <img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" />
+    </a>
+</div>
+</body>
+</html>
