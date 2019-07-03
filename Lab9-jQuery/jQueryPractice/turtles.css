@@ -1,0 +1,26 @@
+body {
+	background-color: white;
+	margin: 0;
+}
+
+#earth {
+	width: 750px;
+	height: 750px;
+	background: url(images/earth.png);
+	margin: auto;
+}
+
+#elephant {
+	width: 500px;
+	height: 380px;
+	background: url(images/elephant.png);
+	margin: -50px auto -100px auto;
+}
+
+.turtle {
+	width: 239px;
+	height: 105px;
+	background: url(images/turtle.png) no-repeat;
+	margin: -3px auto -20px auto;
+	padding-right: 40px;
+}
