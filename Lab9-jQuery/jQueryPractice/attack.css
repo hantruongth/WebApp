@@ -1,0 +1,103 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-size: 11pt;
+	margin: 0px;
+}
+
+.boy {
+	background-image: url("images/boy.png");
+}
+
+button {
+	background-color: red;
+	color: white;	
+	padding: 0.5em;
+}
+
+#city, .person, #raptor {
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+#city {
+	background-image: url("images/background.png");
+	background-repeat: repeat-x;
+	width: 75%;
+	height: 348px;
+	margin: auto;
+	overflow: hidden;
+	padding: 1.5em 4em;
+}
+
+h1.enrage {
+	border-color: yellow;
+	color: white;
+}
+
+.enrage {
+	background-color: red;
+	text-decoration: blink;
+	color: red;
+}
+
+fieldset {
+	width: 30em;
+	text-align: center;
+	margin: auto;	
+}
+
+fieldset, legend {
+	background-color: white;
+}
+
+fieldset#legend {
+	text-align: left;
+	width: 12em;
+}
+
+.girl {
+	background-image: url("images/girl.png");
+}
+
+h1, #city {
+	text-align: center;	
+}
+
+legend {
+	border: 1px solid black;
+}
+
+.normal {
+	border: 8px dashed white;
+	text-decoration: none;
+	color: black;
+}
+
+#people {
+	width: 100%;
+	margin-top: 5%;	
+}
+
+.person, .splat {
+	width: 20px;
+	height: 45px;
+	float: left;
+	position: relative;
+}
+
+#raptor {
+	position: relative;
+	top: 5px;
+	left: 10px;
+	z-index: 10;
+}
+
+.splat {
+	background-image: url("images/splat.png");
+}
+
+#status {
+	font-size: 34pt;
+	text-decoration: blink;
+	color: red;	
+}
