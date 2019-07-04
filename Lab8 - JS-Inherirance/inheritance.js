@@ -32,26 +32,26 @@
         let mountainBikeProto = Object.create(mountainBikePrototype);
         console.log("BikeProto Speed: " + bikeProto.speed());
         //
-        bikeProto.speedUp(5);
-        console.log("BikeProto.speedUp(5) : " + bikeProto.speed());
+        bikeProto.speedUp(4);
+        console.log("BikeProto.speedUp(4) : " + bikeProto.speed());
+        //
+        bikeProto.applyBrake(3);
+        console.log("BikeProto.applyBrake(3): " + bikeProto.speed());
         //
         bikeProto.applyBrake(2);
         console.log("BikeProto.applyBrake(2): " + bikeProto.speed());
         //
-        bikeProto.applyBrake(4);
-        console.log("BikeProto.applyBrake(4): " + bikeProto.speed());
-        //
         console.log("Bike has gear: " + mountainBikeProto.gear);
-        mountainBikeProto.setGear(10);
+        mountainBikeProto.setGear(30);
         //
-        console.log("SetGear(10): " + mountainBikeProto.gear);
+        console.log("SetGear(30): " + mountainBikeProto.gear);
         console.log("Speed 0: " + mountainBikeProto.speed());
         //
-        mountainBikeProto.speedUp(20);
-        console.log("SpeedUp(20): " + mountainBikeProto.speed());
+        mountainBikeProto.speedUp(40);
+        console.log("SpeedUp(40): " + mountainBikeProto.speed());
         //
-        mountainBikeProto.applyBrake(15);
-        console.log("ApplyBrake(15): " + mountainBikeProto.speed());
+        mountainBikeProto.applyBrake(10);
+        console.log("ApplyBrake(10): " + mountainBikeProto.speed());
     }
     start();
 })();
