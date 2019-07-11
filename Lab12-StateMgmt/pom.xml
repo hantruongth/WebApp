@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.wap.state.management</groupId>
-    <artifactId>lab11</artifactId>
+    <artifactId>lab12</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>

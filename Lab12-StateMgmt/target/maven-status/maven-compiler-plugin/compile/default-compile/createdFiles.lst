@@ -1,0 +1,5 @@
+com/wap/state/management/LoginServlet.class
+com/wap/state/management/User.class
+com/wap/state/management/MyFilter.class
+com/wap/state/management/LogoutServlet.class
+com/wap/state/management/Constants.class
