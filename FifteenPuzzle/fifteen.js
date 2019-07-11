@@ -139,7 +139,6 @@ $(document).ready(function() {
 
     $("#puzzlearea").on('click', 'div', function() {
         move(this);
-        $("#counter").text(zi-1);
     });
 
     $("#puzzlearea").on('mouseover', 'div', function() {
